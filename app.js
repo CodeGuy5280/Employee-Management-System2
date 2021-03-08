@@ -159,3 +159,11 @@ function addEmployee() {
   
     })
   }
+  //============= Update Employee ==========================//
+  function updateEmployee() {
+    connection.query("SELECT employee.last_name, role.title FROM employee JOIN role ON employee.role_id = role.id;", function(err, res) {
+    // console.log(res)
+     if (err) throw err
+     console.log(res)
+    inquirer.prompt([
+          {
