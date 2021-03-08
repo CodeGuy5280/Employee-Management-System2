@@ -35,3 +35,8 @@ function startPrompt() {
               "Add Department?"
             ]
     }
+]).then(function(val) {
+    switch (val.choice) {
+        case "View All Employees?":
+          viewAllEmployees();
+        break;
