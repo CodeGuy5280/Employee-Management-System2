@@ -179,3 +179,15 @@ function addEmployee() {
             message: "What is the Employee's last name? ",
           },
           {
+            name: "role",
+            type: "rawlist",
+            message: "What is the Employees new title? ",
+            choices: selectRole()
+          },
+      ]).then(function(val) {
+        var roleId = selectRole().indexOf(val.role) + 1
+        connection.query("UPDATE employee SET WHERE ?", 
+        {
+          last_name: val.lastName
+           
+        }, 
