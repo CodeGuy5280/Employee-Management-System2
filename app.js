@@ -46,3 +46,22 @@ function startPrompt() {
         case "View all Emplyees By Deparments":
             viewAllDepartments();
           break;
+          case "Add Employee?":
+            addEmployee();
+          break;
+
+      case "Update Employee":
+            updateEmployee();
+          break;
+  
+        case "Add Role?":
+            addRole();
+          break;
+  
+        case "Add Department?":
+            addDepartment();
+          break;
+
+        }
+})
+}
